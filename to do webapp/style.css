@@ -1,0 +1,80 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    justify-content: center;
+    background-image: url(hand-painted-watercolor-abstract-watercolor-background_23-2149005675.jpg);
+    background-size: cover;
+    overflow: hidden;
+    
+}
+h1 {
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+.form{
+    position: absolute;
+    top: 30%;
+    box-shadow: 0 4px 8px rgba(0,0,0,.3);
+    width: 400px;
+    background-color: palegreen;
+    border-radius: 10px;
+}
+
+.input{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+    border: none;
+    font-size: 20px;
+    font-family: cursive;
+}
+
+.input::placeholder{
+    color: gray;
+}
+
+.list{
+    padding: 0;
+    margin: 0;
+}
+
+.list li{
+    list-style-type: none;
+    padding: 20px;
+    font-family: cursive;
+    border-top: dotted;
+    border-color: rgb(239, 239, 35);
+    position: relative;
+}
+
+.list li .fa-trash{
+    color: red;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.list li .fa-check-square{
+    color: green;
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.list li.checked {
+    color: rgb(224, 105, 105);
+    text-decoration: line-through;
+}
+
+.list li.checked .fa-check-square{
+    color: rgb(232, 100, 100);
+}
